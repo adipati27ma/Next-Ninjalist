@@ -1,3 +1,5 @@
+// automatically create route : "/about" & can access it
+
 const About = () => {
   return (
     <div>

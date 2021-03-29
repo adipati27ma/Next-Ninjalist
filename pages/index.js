@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
+// automatically create route : "/" & can access it
+
 export default function Home() {
   return (
     <div>

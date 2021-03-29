@@ -1,3 +1,5 @@
+// automatically create route : "/ninjas/test" & can access it
+
 import React from 'react';
 
 const Test = () => {
