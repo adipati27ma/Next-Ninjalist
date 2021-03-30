@@ -7,6 +7,10 @@ const About = () => {
       <Head>
         <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas" />
+        <meta
+          name="description"
+          content="Ninja List doesn't have a team, only one person who developed this website. -Adipateez"
+        />
       </Head>
       <div>
         <h1>About</h1>

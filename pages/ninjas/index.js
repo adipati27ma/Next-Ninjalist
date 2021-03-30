@@ -19,6 +19,10 @@ const Ninjas = ({ ninjas }) => {
       <Head>
         <title>Ninja List | All Ninjas</title>
         <meta name="keywords" content="ninjas" />
+        <meta
+          name="description"
+          content="All ninja list that registered in this website"
+        />
       </Head>
       <div>
         <h1>All Ninjas</h1>

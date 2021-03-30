@@ -10,6 +10,10 @@ export default function Home() {
       <Head>
         <title>Ninja List | Home</title>
         <meta name="keywords" content="ninjas" />
+        <meta
+          name="description"
+          content="Ninja List is a website application, for practice"
+        />
       </Head>
       <div>
         <h1 className={styles.title}>Homepage</h1>

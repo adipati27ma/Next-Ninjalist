@@ -33,15 +33,25 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ ninja }) => {
   return (
-    <div>
-      <h1>{ninja.name}</h1>
-      <p>Email : {ninja.email}</p>
-      <p>Website : {ninja.website}</p>
-      <p>City : {ninja.address.city}</p>
-      <Link href="/ninjas">
-        <a className={styles.btn}>Back</a>
-      </Link>
-    </div>
+    <>
+      <Head>
+        <title>Ninja List | About</title>
+        <meta name="keywords" content="ninjas" />
+        <meta
+          name="description"
+          content="Deskripsi meta harusnya didapatkan dari API dan JSON nya, ini contoh."
+        />
+      </Head>
+      <div>
+        <h1>{ninja.name}</h1>
+        <p>Email : {ninja.email}</p>
+        <p>Website : {ninja.website}</p>
+        <p>City : {ninja.address.city}</p>
+        <Link href="/ninjas">
+          <a className={styles.btn}>Back</a>
+        </Link>
+      </div>
+    </>
   );
 };
 
