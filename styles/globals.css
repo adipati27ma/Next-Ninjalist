@@ -7,8 +7,12 @@ body {
 }
 
 a {
-  color: #333;
+  color: rgb(116, 117, 201);
   text-decoration: none;
+}
+
+a:hover {
+  filter: opacity(.85);
 }
 
 .content {
@@ -27,6 +31,7 @@ nav {
 
 nav a {
   margin-left: 12px;
+  color: rgb(51, 51, 51);
 }
 
 nav a:hover {
@@ -44,4 +49,16 @@ footer {
   margin-top: 60px;
   color: #777;
   border-top: 1px solid #eaeaea;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found a {
+  text-decoration: underline;
+}
+
+.not-found a:hover {
+  text-decoration: none;
 }
