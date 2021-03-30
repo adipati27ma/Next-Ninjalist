@@ -16,7 +16,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-// func akan di-run 10x, sesuai jumlah item di variabel "paths" (yg dibuat)
+// func akan di-run 10x (karena hasil HTML dari getStaticPaths ada 10), sesuai jumlah item di variabel "paths" (yg dibuat)
 // variable "paths" akan masuk ke "context"
 export const getStaticProps = async (context) => {
   const id = context.params.id;
