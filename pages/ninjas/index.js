@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/Ninjas.module.css';
 
+// ini akan dijalankan before component rendered. this func runs at "build time"
 export const getStaticProps = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/users');
   const data = await res.json();
