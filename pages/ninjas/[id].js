@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import styles from '../../styles/Home.module.css';
+
 // func will tell Next.js how many html pages need to be made
 // based on the data (ninjas)
 export const getStaticPaths = async () => {
@@ -35,6 +38,9 @@ const Details = ({ ninja }) => {
       <p>Email : {ninja.email}</p>
       <p>Website : {ninja.website}</p>
       <p>City : {ninja.address.city}</p>
+      <Link href="/ninjas">
+        <a className={styles.btn}>Back</a>
+      </Link>
     </div>
   );
 };
